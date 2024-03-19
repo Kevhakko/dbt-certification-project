@@ -11,3 +11,5 @@ boardgame_project: # name of the profile described on dbt_project.yml
       user: dbt
       warehouse: DBT_CERTIFICATION_PROJECT_WH
   target: dev
+
+  #Comentarios de prueba
