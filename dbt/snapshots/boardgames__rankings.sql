@@ -2,10 +2,11 @@
 
 {{
     config(
-      target_schema='dbt_kbrenes',
+      target_schema='snapshots',
       unique_key='id',
       strategy='timestamp',
-      updated_at='updated_at'
+      updated_at='updated_at',
+      tags="daily"
     )
 }}
 
