@@ -43,6 +43,8 @@ models:
   dbt_certification_project:
     staging:
       +materialized: view
+    intermediate:
+      +materialized: ephemeral  
 
 seeds:
   dbt_certification_project:
