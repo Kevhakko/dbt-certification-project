@@ -43,8 +43,17 @@ models:
   dbt_certification_project:
     staging:
       +materialized: view
+      +tags: 
+        - staging
+        - static
     intermediate:
-      +materialized: ephemeral  
+      +materialized: ephemeral
+      +tags: 
+        - intermediate  
+    marts:
+      +materialized: table
+      +tags:
+        - marts    
 
 seeds:
   dbt_certification_project:
